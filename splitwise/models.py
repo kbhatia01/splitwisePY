@@ -50,6 +50,16 @@ class UserExpense(BaseModel):
     user_expense_type = models.CharField(max_length=20, choices=UserExpenseType.choices)
 
 
+# #  D paid 500 for e1 , 250- k , 250 - g
+#
+# E1 =  500, d , g1..
+#
+# ue1 = 500, d, userET = paid, e1
+# ue2 = 250 k, userET = owe, e1
+# ue3 = 250, G, userET = owe, e1
+#
+
+
 # class Student(models.Model):
 #     name = models.CharField(max_length=255)
 #     id = models.UUIDField(primary_key=True)
